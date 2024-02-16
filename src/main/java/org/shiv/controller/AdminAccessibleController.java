@@ -4,10 +4,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class DefaultController {
-    @GetMapping("/")
-    public String defaultEndpoint()
+public class AdminAccessibleController {
+    @GetMapping("/admin")
+    String helloAdmin()
     {
-        return "<h1>Hello from the default page !!</h1>";
+        return  "<h1>Hello to the admin !!</h1>";
     }
 }
